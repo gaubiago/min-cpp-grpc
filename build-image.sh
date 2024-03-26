@@ -1,0 +1,1 @@
+docker build -t min-cpp-grpc:1.0 -f my.debian.dockerfile .
