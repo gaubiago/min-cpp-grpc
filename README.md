@@ -12,7 +12,7 @@ or
 docker build -t min-cpp-grpc:1.0 -f my.debian.dockerfile .
 ```
 
-## Test Your Image
+## Test the Image
 
 This testing goes along the lines of [gRPC Quick Start](https://grpc.io/docs/languages/cpp/quickstart/).
 
@@ -94,3 +94,27 @@ This testing goes along the lines of [gRPC Quick Start](https://grpc.io/docs/lan
       ```shell
       ./greeter_client
       ```
+      
+## gRPC Basics Tutorial Commands
+
+The gRPC Basics Tutorial can be found [here](https://grpc.io/docs/languages/cpp/basics/).
+
+```shell
+cd /home/grpc/examples/cpp/route_guide
+```
+
+```shell
+/home/build-with-gprc-and-protobuf.sh
+```
+
+```shell
+cd /home/grpc/examples/cpp/route_guide/cmake/build
+```
+
+```shell
+./route_guide_server --db_path=../../route_guide_db.json
+```
+
+```shell
+./route_guide_client --db_path=../../route_guide_db.json
+```
